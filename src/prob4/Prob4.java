@@ -17,9 +17,6 @@ public class Prob4 {
 				if (inputNumber / Money[i] > 0) {
 					count[i]++;
 					inputNumber-=Money[i];
-					if(Money[i]==0){
-						break;
-					}
 				}
 				else {
 					break;

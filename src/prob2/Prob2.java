@@ -11,13 +11,17 @@ public class Prob2 {
 			System.out.print("숫자를 입력하세요: ");
 			int inputNumber = scanner.nextInt();
 			int sum = 0;
-			for (int i = 0; i <= inputNumber; i++) {
-				if (inputNumber % 2 == 0) {
-					sum += i;
-				} else {
-					sum += i;
+			
+			if(inputNumber % 2 == 0 ){
+				for(int i=0;i<=inputNumber;i=i+2){
+					sum+=i;
 				}
 			}
+			else
+				for(int i = 1; i<=inputNumber; i=i+2){
+					sum+=i;
+				}
+
 	
 			System.out.println(sum);
 			if (inputNumber == 1)
